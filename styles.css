@@ -1,3 +1,31 @@
-.ae {
-    color: blue;
+body {
+    width: 50vh; 
+    margin-top: 40px;  
+    padding: 30px;  
+    background-size: cover;  
+    font-family: sans-serif;  
+}  
+header {  
+    background-color: #ffffff;  
+    position: fixed;  
+    left: 0;  
+    right: 0;   
+    top: 0;
+    height: 50px;  
+    display: flex;  
+    align-items: center;  
+    box-shadow: 0 0 20px 0 black;  
+}  
+header * {  
+    display: inline;  
+}  
+header li {  
+    margin: 20px;  
+}  
+header li a {  
+    color: blue;  
+    text-decoration: none;  
+} 
+.logo {
+    margin: 10px;
 }
