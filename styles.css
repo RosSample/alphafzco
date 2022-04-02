@@ -1,11 +1,12 @@
 body {
-    width: 50vh; 
-    margin-top: 40px;  
-    padding: 30px;  
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
     background-size: cover;  
     font-family: sans-serif;  
 }  
-header {  
+.navmenu {  
     background-color: #ffffff;  
     position: fixed;  
     left: 0;  
@@ -15,17 +16,27 @@ header {
     display: flex;  
     align-items: center;  
     box-shadow: 0 0 20px 0 black;  
-}  
-header * {  
-    display: inline;  
-}  
-header li {  
-    margin: 20px;  
-}  
-header li a {  
-    color: blue;  
-    text-decoration: none;  
 } 
 .logo {
     margin: 10px;
+}
+nav {
+    font-size: 20px;
+    text-align: center;
+}
+.cdiv {
+    flex: 2;
+}
+.toright {
+    text-align: right;
+    margin-right: 20vh;
+}
+.main {
+    background-size: cover;
+    width: 100%;
+    align-content: center;
+    height: 250px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftipik.ru%2Fwp-content%2Fuploads%2F2019%2F06%2F%25D0%25A4%25D0%25BE%25D0%25BD-%25D0%25B4%25D0%25BB%25D1%258F-%25D0%25BF%25D1%2580%25D0%25B5%25D0%25B7%25D0%25B5%25D0%25BD%25D1%2582%25D0%25B0%25D1%2586%25D0%25B8%25D0%25B8-%25D0%25B1%25D0%25B5%25D0%25BB%25D0%25BE-%25D0%25B3%25D0%25BE%25D0%25BB%25D1%2583%25D0%25B1%25D0%25BE%25D0%25B9-%25D0%25B7%25D0%25B0%25D1%2581%25D1%2582%25D0%25B0%25D0%25B2%25D0%25BA%25D0%25B0004-1.jpg&f=1&nofb=1");
+    background-position: center;
+    background-blend-mode: darken;
 }
