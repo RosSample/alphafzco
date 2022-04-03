@@ -43,6 +43,7 @@ nav {
     background-blend-mode: darken;
 }
 .box {
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -79,6 +80,9 @@ nav {
     padding: 40px;
 }
 .box1:hover {
+    background: #ffffff;
+}
+.box2:hover {
     background: #ffffff;
 }
 .boximg {
