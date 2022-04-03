@@ -2,10 +2,15 @@ body {
     margin-top: 40px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     padding-top: 10px;
     background-size: cover;  
     font-family: "Lora", Arial, serif;
     background-color: #f6f6f6;
+    width: auto;
 }  
 .navmenu {  
     background-color: #f6f6f6;
@@ -18,9 +23,29 @@ body {
     flex-direction: row;
     align-items: center;  
     box-shadow: 0 0 20px 0 black;  
+    z-index: 2;
 } 
 .logo {
-    margin: 10px;
+    margin: 10px 10px 10px 13px;
+}
+.afzco {
+    margin: auto; 
+    padding-top: 100px;
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    z-index: 1; 
+    position: absolute;
+    width: 263px;
+    height: 50px;
+}
+.back {
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    padding-top: 100px; 
+    display: block; 
+    z-index: 0;
 }
 nav {
     font-size: 20px;
@@ -31,14 +56,21 @@ nav {
 }
 .toright {
     text-align: right;
-    margin-right: 20vh;
+    margin-right: 3vh;
+}
+.toleft {
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    text-decoration: underline;
 }
 .main {
     background-size: cover;
     width: 100%;
     align-content: center;
     height: 250px;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftipik.ru%2Fwp-content%2Fuploads%2F2019%2F06%2F%25D0%25A4%25D0%25BE%25D0%25BD-%25D0%25B4%25D0%25BB%25D1%258F-%25D0%25BF%25D1%2580%25D0%25B5%25D0%25B7%25D0%25B5%25D0%25BD%25D1%2582%25D0%25B0%25D1%2586%25D0%25B8%25D0%25B8-%25D0%25B1%25D0%25B5%25D0%25BB%25D0%25BE-%25D0%25B3%25D0%25BE%25D0%25BB%25D1%2583%25D0%25B1%25D0%25BE%25D0%25B9-%25D0%25B7%25D0%25B0%25D1%2581%25D1%2582%25D0%25B0%25D0%25B2%25D0%25BA%25D0%25B0004-1.jpg&f=1&nofb=1");
+    background-image: url("img/pipelines.jpg");
     background-position: center;
     background-blend-mode: darken;
 }
@@ -59,7 +91,6 @@ nav {
     margin: 1px 0 0 1px;
     padding: 40px;
     transition: all ease-out 0.2s;
-    position: relative;
 }
 .box2 {
     background: #fbfbfb;
@@ -71,7 +102,6 @@ nav {
     margin: 1px 0 0 1px;
     padding: 40px;
     transition: all ease-out 0.2s;
-    position: relative;
 }
 .about {
     width: 974px;
@@ -105,4 +135,42 @@ button {
 }
 button:hover {
     background-color: #5e5cd4;
+}
+#gasImg {
+    display: none;
+    width: 200px;
+    height: 120px;
+}
+#gasImg1 {
+    display: none;
+    width: 200px;
+    height: 120px;
+}
+#gasImg2 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    margin-right: 20px;
+}
+#gasImg3 {
+    display: none;
+    width: 160px;
+    height: 90px;
+}
+.footer {
+    color: rgb(196, 196, 196);
+    display: grid;
+    background-color: #1a1a1a;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 200px;
+}
+.footer p {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(196, 196, 196);
+    margin-bottom: 0;
 }

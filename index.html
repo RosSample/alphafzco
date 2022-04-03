@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Alpha FZCO</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
@@ -19,27 +20,45 @@
         }
         function showMoreG() {
             var moreText = document.getElementById("gas");
+            var moreImg = document.getElementById("gasImg");
+            var moreImg1 = document.getElementById("gasImg1");
+            var moreImg2 = document.getElementById("gasImg2");
+            var moreImg3 = document.getElementById("gasImg3");
             var btnText = document.getElementById("mb2");
 
             if (btnText.innerHTML === "Less") {
                 btnText.innerHTML = "More";
                 moreText.style.display = "none";
+                moreImg.style.display = "none";
+                moreImg1.style.display = "none";
+                moreImg2.style.display = "none";
+                moreImg3.style.display = "none";
             } else {
                 btnText.innerHTML = "Less";
                 moreText.style.display = "block";
+                moreImg.style.display = "block";
+                moreImg1.style.display = "block";
+                moreImg2.style.display = "block";
+                moreImg3.style.display = "block";
             }
         }
+        // document.getElementByTagName("body").style.width = screen.width;
     </script>
 </head>
 <body>
     <div class="navmenu">
         <img class="logo" src="img/a.png" width="50" height="50">
         <div class="cdiv">
-            <p class="toright">Contacts</p>
+            <p class="toright">Contacts:</p>
+        </div>
+        <div style="margin-right: 8vh;">
+            <p class="toleft">Tel.: +971 4 228 52 85</p>
+            <p class="toleft">Email: OOOALFA568@GMAIL.COM</p>
         </div>
     </div>
     <div class="main">
-        <img style="margin: auto; display: block; padding-top: 100px;" src="img/afzco.png">
+        <img class="afzco" src="img/afzco1.png">
+        <img src="img/wback.png" class="back">
     </div>
     <div class="about">
         <ul>
@@ -65,11 +84,25 @@
             <h1>GAS PRODUCTS SUPPLY</h1>
             <p>Our company is the main supplier of large gas pipelines for the construction of the North-South gas pipeline.</p>
             <p id="gas">
-                Within the framework of the North-South gas pipeline project, with a length of 1100 km and a capacity of up to 12.3 billion cubic meters per year in the ports of Karachi and Gwadar in southern Pakistan with power plants and industrial gas consumers in Lahore in the north of the country, our potential customers are the Pakistan companies "NSGPL" and "INTER STATE GAS SYSTEMS.
+                Within the framework of the North-South gas pipeline project, with a length of 1100 km and a capacity of up to 12.3 billion cubic meters per year in the ports of Karachi and Gwadar in southern Pakistan with power plants and industrial gas consumers in Lahore in the north of the country, our potential customers are the Pakistan companies "SNGPL" and "INTER STATE GAS SYSTEMS.
                 In addition to our organization, "CNPC" is the second general contractor in the construction project of the North-South main gas pipeline and takes an active part in the implementation of the project.
             </p>
+            <div style="display: grid;">
+                <img style="grid-column: 1; grid-row: 1;" id="gasImg" src="img/isgs.png"> 
+                <img style="grid-column: 1; grid-row: 2;" id="gasImg1" src="img/cnpc.png"> 
+                <img style="grid-column: 2; grid-row: 1;" id="gasImg2" src="img/sngpl.png"> 
+                <img style="grid-column: 2; grid-row: 2; align-self: center;" id="gasImg3" src="img/pakistan.jpg">
+            </div>
             <button onclick="showMoreG()" id="mb2">More</button>
         </div>
+    </div>
+    <div class="footer">
+        <strong style="grid-row: 1; text-decoration: underline; font-size: 20px; padding-top: 20px;">Contact us:</strong>
+        <p style="grid-row: 2; grid-column: 1;">Adress: Dubai Silicon Oasis, DDP, Building A2, Dubai, United Arab Emirates</p>
+        <p style="grid-row: 2; grid-column: 2;">Tel.: +971 4 228 52 85</p>
+        <p style="grid-row: 3; grid-column: 1;">Company Registration Number: DSO-FZCO-13386</p>
+        <p style="grid-row: 3; grid-column: 2;">Email: OOOALFA568@GMAIL.COM</p>
+        <p style="grid-row: 4; grid-column: 2;">Copyright © 2022 Alpha FZCO</p>
     </div>
 </body>
 </html>
