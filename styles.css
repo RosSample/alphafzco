@@ -4,16 +4,18 @@ body {
     margin-right: 0;
     padding-top: 10px;
     background-size: cover;  
-    font-family: sans-serif;  
+    font-family: "Lora", Arial, serif;
+    background-color: #f6f6f6;
 }  
 .navmenu {  
-    background-color: #ffffff;  
+    background-color: #f6f6f6;
     position: fixed;  
     left: 0;  
     right: 0;   
     top: 0;
     height: 50px;  
     display: flex;  
+    flex-direction: row;
     align-items: center;  
     box-shadow: 0 0 20px 0 black;  
 } 
@@ -39,4 +41,64 @@ nav {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftipik.ru%2Fwp-content%2Fuploads%2F2019%2F06%2F%25D0%25A4%25D0%25BE%25D0%25BD-%25D0%25B4%25D0%25BB%25D1%258F-%25D0%25BF%25D1%2580%25D0%25B5%25D0%25B7%25D0%25B5%25D0%25BD%25D1%2582%25D0%25B0%25D1%2586%25D0%25B8%25D0%25B8-%25D0%25B1%25D0%25B5%25D0%25BB%25D0%25BE-%25D0%25B3%25D0%25BE%25D0%25BB%25D1%2583%25D0%25B1%25D0%25BE%25D0%25B9-%25D0%25B7%25D0%25B0%25D1%2581%25D1%2582%25D0%25B0%25D0%25B2%25D0%25BA%25D0%25B0004-1.jpg&f=1&nofb=1");
     background-position: center;
     background-blend-mode: darken;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+.box1 {
+    background: #fbfbfb;
+    display: block;
+    clear: right;
+    width: 406px;
+    height: auto;
+    float: left;
+    margin: 1px 0 0 1px;
+    padding: 40px;
+    transition: all ease-out 0.2s;
+    position: relative;
+}
+.box2 {
+    background: #fbfbfb;
+    display: block;
+    clear: right;
+    width: 406px;
+    height: auto;
+    float: left;
+    margin: 1px 0 0 1px;
+    padding: 40px;
+    transition: all ease-out 0.2s;
+    position: relative;
+}
+.about {
+    width: 974px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 40px;
+}
+.box1:hover {
+    background: #ffffff;
+}
+.boximg {
+    width: 400px;
+    height: 80px;
+    object-fit: cover;
+}
+#cons {
+    display: none;
+}
+#gas {
+    display: none;
+}
+button {
+    background-color: #3c3ac2;
+    color: aliceblue;
+    border: none;
+    padding: 8px 10px;
+    margin-left: 360px;
+}
+button:hover {
+    background-color: #5e5cd4;
 }
