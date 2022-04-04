@@ -1,108 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="description" content="ALPHA FZCO">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Alpha FZCO</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <script>
-        function showMoreC() {
-            var moreText = document.getElementById("cons");
-            var btnText = document.getElementById("mb1");
-
-            if (btnText.innerHTML === "Less") {
-                btnText.innerHTML = "More";
-                moreText.style.display = "none";
-            } else {
-                btnText.innerHTML = "Less";
-                moreText.style.display = "block";
-            }
-        }
-        function showMoreG() {
-            var moreText = document.getElementById("gas");
-            var moreImg = document.getElementById("gasImg");
-            var moreImg1 = document.getElementById("gasImg1");
-            var moreImg2 = document.getElementById("gasImg2");
-            var moreImg3 = document.getElementById("gasImg3");
-            var btnText = document.getElementById("mb2");
-
-            if (btnText.innerHTML === "Less") {
-                btnText.innerHTML = "More";
-                moreText.style.display = "none";
-                moreImg.style.display = "none";
-                moreImg1.style.display = "none";
-                moreImg2.style.display = "none";
-                moreImg3.style.display = "none";
-            } else {
-                btnText.innerHTML = "Less";
-                moreText.style.display = "block";
-                moreImg.style.display = "block";
-                moreImg1.style.display = "block";
-                moreImg2.style.display = "block";
-                moreImg3.style.display = "block";
-            }
-        }
-        // document.getElementByTagName("body").style.width = screen.width;
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="navmenu">
-        <img class="logo" src="img/a.png" width="50" height="50">
+        <img class="logo" src="img/a.png" alt="logo">
         <div class="cdiv">
-            <p class="toright">Contacts:</p>
+            <p>Contacts:</p>
         </div>
-        <div style="margin-right: 8vh;">
-            <p class="toleft">Tel.: +971 4 228 52 85</p>
-            <p class="toleft">Email: OOOALFA568@GMAIL.COM</p>
+        <div class="toleft">
+            <p>Tel.: <a href="tel:+97142285285">+971 4 228 52 85</a></p>
+            <p>Email: <a href="mailto:oooalfa568@gmail.com">OOOALFA568@GMAIL.COM</a></p>
         </div>
     </div>
     <div class="main">
-        <img class="afzco" src="img/afzco1.png">
-        <img src="img/wback.png" class="back">
+        <img class="afzco" alt="logomid" src="img/afzco1.png">
+        <img src="img/wback.png" alt="background" class="back">
     </div>
     <div class="about">
         <ul>
-            <li style="padding-bottom: 10px;">ALPHA FZCO challenges traditional consulting by providing high-quality and analytically accurate consulting services.</li> 
+            <li class="li1">ALPHA FZCO challenges traditional consulting by providing high-quality and analytically accurate consulting services.</li> 
             <li>ALPHA FZCO provides the supply of components in the gas industry with the maximum use of innovative world technologies, 
             materials, equipment and products, and also attracts international research, design and construction organizations to implement the project.</li>
         </ul>
     </div>
     <div class="box">
         <div class="box1">
-            <img class="boximg" src="img/consulting.jpg">
+            <img class="boximg" alt="consulting" src="img/consulting.jpg">
             <h1>CONSULTING SERVICES</h1>
             <p>We are the experts in the field of consulting research and consulting on development of real estate projects.</p>
-            <p id="cons">
+            <p class="hide1">
                 In our work, we rely on unique long-term experience and apply innovative approaches to solving problems, thereby forming high requirements for service quality indicators.
                 Our specialists are ready to provide consultation services to Customers from different parts of the world, including CIS countries, Europe and Asia.
                 We advise Customers from the private and public sectors, helping them to become effective and dynamic innovators on the application of blockchain technology in various activities.
             </p>
-            <button onclick="showMoreC()" id="mb1">More</button>
+            <button value="mb1" onclick="showMore(this.value, 'hide1')" id="mb1">More</button>
         </div>
         <div class="box2">
-            <img class="boximg" src="img/pipes.jpeg">
+            <img class="boximg" alt="pipes" src="img/pipes.jpeg">
             <h1>GAS PRODUCTS SUPPLY</h1>
             <p>Our company is the main supplier of large gas pipelines for the construction of the North-South gas pipeline.</p>
-            <p id="gas">
+            <p class="hide2">
                 Within the framework of the North-South gas pipeline project, with a length of 1100 km and a capacity of up to 12.3 billion cubic meters per year in the ports of Karachi and Gwadar in southern Pakistan with power plants and industrial gas consumers in Lahore in the north of the country, our potential customers are the Pakistan companies "SNGPL" and "INTER STATE GAS SYSTEMS.
                 In addition to our organization, "CNPC" is the second general contractor in the construction project of the North-South main gas pipeline and takes an active part in the implementation of the project.
             </p>
-            <div style="display: grid;">
-                <img style="grid-column: 1; grid-row: 1;" id="gasImg" src="img/isgs.png"> 
-                <img style="grid-column: 1; grid-row: 2;" id="gasImg1" src="img/cnpc.png"> 
-                <img style="grid-column: 2; grid-row: 1;" id="gasImg2" src="img/sngpl.png"> 
-                <img style="grid-column: 2; grid-row: 2; align-self: center;" id="gasImg3" src="img/pakistan.jpg">
+            <div class="grid">
+                <img class="hide2" id="gasImg1" alt="isgs" src="img/isgs.png"> 
+                <img class="hide2" id="gasImg2" alt="cnpc" src="img/cnpc.png"> 
+                <img class="hide2" id="gasImg3" alt="sngpl" src="img/sngpl.png"> 
+                <img class="hide2" id="gasImg4" alt="pakflag" src="img/pakistan.jpg">
             </div>
-            <button onclick="showMoreG()" id="mb2">More</button>
+            <button value="mb2" onclick="showMore(this.value, 'hide2')" id="mb2">More</button>
         </div>
     </div>
     <div class="footer">
-        <strong style="grid-row: 1; text-decoration: underline; font-size: 20px; padding-top: 20px;">Contact us:</strong>
-        <p style="grid-row: 2; grid-column: 1;">Adress: Dubai Silicon Oasis, DDP, Building A2, Dubai, United Arab Emirates</p>
-        <p style="grid-row: 2; grid-column: 2;">Tel.: +971 4 228 52 85</p>
-        <p style="grid-row: 3; grid-column: 1;">Company Registration Number: DSO-FZCO-13386</p>
-        <p style="grid-row: 3; grid-column: 2;">Email: OOOALFA568@GMAIL.COM</p>
-        <p style="grid-row: 4; grid-column: 2;">Copyright © 2022 Alpha FZCO</p>
+        <strong>Contact us:</strong>
+        <p id="g21">Adress: Dubai Silicon Oasis, DDP, Building A2, Dubai, United Arab Emirates</p>
+        <p id="g22">Tel.: <a href="tel:+97142285285">+971 4 228 52 85</a></p>
+        <p id="g31">Company Registration Number: DSO-FZCO-13386</p>
+        <p id="g32">Email: <a href="mailto:oooalfa568@gmail.com">OOOALFA568@GMAIL.COM</a></p>
+        <p id="g42">Copyright © 2022 Alpha FZCO</p>
     </div>
 </body>
 </html>
