@@ -3,9 +3,13 @@ function showMore(id, h) {
     var hide = document.getElementsByClassName(h);
     if (btnText.innerHTML === "Less") {
         btnText.innerHTML = "More";
-        hide.style.display = "none";
+        for (let i = 0; i < hide.length; i++) {
+            hide[i].style.display = "none";
+        }
     } else {
         btnText.innerHTML = "Less";
-        hide.style.display = "block";
+        for (let i = 0; i < hide.length; i++) {
+            hide[i].style.display = "block";
+        }
     }
 }
