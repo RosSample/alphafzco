@@ -1,21 +1,12 @@
 body {
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding-top: 10px;
-    background-size: cover;  
+    margin: 0 0 0 0;
     font-family: "Lora", Arial, serif;
     background-color: #f6f6f6;
 }  
 .navmenu {  
     background-color: #f6f6f6;
     position: fixed;  
-    left: 0;  
-    right: 0;   
+    width: 100%;  
     top: 0;
     height: 50px;  
     display: flex;  
@@ -68,6 +59,7 @@ nav {
     color: inherit;
 }
 .main {
+    padding-top: 50px;
     background-size: cover;
     width: 100%;
     align-content: center;
@@ -77,28 +69,24 @@ nav {
     background-blend-mode: darken;
 }
 .box {
-    align-items: flex-start;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    margin-bottom: 200px;
+    margin: 0 25% 150px 25%;
 }
 .box1 {
+    flex: 1;
     background: #fbfbfb;
     display: block;
-    clear: right;
-    max-width: 406px;
     height: auto;
-    float: left;
+    float: right;
     margin: 1px 0 0 1px;
     padding: 40px;
     transition: all ease-out 0.2s;
 }
 .box2 {
+    flex: 1;
     background: #fbfbfb;
     display: block;
-    clear: right;
-    max-width: 406px;
     height: auto;
     float: left;
     margin: 1px 0 0 1px;
@@ -106,6 +94,7 @@ nav {
     transition: all ease-out 0.2s;
 }
 .about {
+    flex: 1;
     max-width: 974px;
     margin: 0 auto;
     font-size: 20px;
@@ -176,9 +165,8 @@ button:hover {
     display: grid;
     background-color: #1a1a1a;
     bottom: 0;
-    left: 0;
-    right: 0;
-    padding-left: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .footer p {
     padding-left: 40px;
