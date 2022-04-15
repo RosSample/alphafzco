@@ -1,0 +1,6 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+}
